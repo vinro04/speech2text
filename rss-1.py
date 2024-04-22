@@ -4,7 +4,7 @@ import tempfile
 
 # Function to transcribe audio
 def transcribe_audio(audio_path):
-    model = whisper.load_model("base")
+    model = whisper.load_model("small")
     result = model.transcribe(audio_path)
     return result['text']
 
